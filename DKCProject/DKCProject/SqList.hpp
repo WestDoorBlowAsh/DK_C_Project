@@ -25,14 +25,14 @@ typedef struct {
 } SeqList;
 
 enum Status {
-    Success = 1,
-    Fail = -1
+    OK = 1,
+    Error = -1
 };
 
 Status InitList(SqList &L);
 int Length(SqList &L);
 int LocateElem(SqList &L, ElemType e);
-int GetElem(SqList &L, int i);
+Status GetElem(SqList &L, int i);
 Status ListInsert(SqList &L, int i, ElemType e);
 Status ListDelete(SqList &L, int i, ElemType &e);
 Status PrintList(SqList L);

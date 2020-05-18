@@ -11,7 +11,7 @@
 
 Status InitList(SqList &L) {
     L.length = 0;
-    return Success;
+    return OK;
 }
 
 int Length(SqList &L) {
@@ -24,9 +24,16 @@ int LocateElem(SqList &L, ElemType e) {
             return i;
         }
     }
-    return Fail;
+    return Error;
 }
-//int GetElem(SqList &L, int i);
+
+ElemType GetElem(SqList &L, int i) {
+    if (i < 0 || i > L.length - 1) {
+        return NULL;
+    }
+    return L.data[i];
+}
+
 //Status ListInsert(SqList &L, int i, ElemType e);
 //Status ListDelete(SqList &L, int i, ElemType &e);
 //Status PrintList(SqList L);
@@ -38,5 +45,5 @@ Status InitSeqList(SeqList &L) {
     L.data = new ElemType[InitSize];
     L.maxSize = InitSize;
     L.length = 0;
-    return Success;
+    return OK;
 }
