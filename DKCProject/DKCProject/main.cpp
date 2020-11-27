@@ -7,11 +7,14 @@
 //
 
 #include <iostream>
+#include "bailian/1000_A_B_Problem.c"
+#include "leetCode101/02_greedy.hpp"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    cout << "Hello, World!\n";
+    
+    run();
+    
     return 0;
 }

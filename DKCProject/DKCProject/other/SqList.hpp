@@ -32,7 +32,7 @@ enum Status {
 Status InitList(SqList &L);
 int Length(SqList &L);
 int LocateElem(SqList &L, ElemType e);
-Status GetElem(SqList &L, int i);
+ElemType GetElem(SqList &L, int i);
 Status ListInsert(SqList &L, int i, ElemType e);
 Status ListDelete(SqList &L, int i, ElemType &e);
 Status PrintList(SqList L);
