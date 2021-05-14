@@ -12,6 +12,7 @@
 		161A267325710214006C6CB1 /* 02_greedy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 161A267225710214006C6CB1 /* 02_greedy.cpp */; };
 		161DEAF12508799E00293D0A /* 1000_A_B_Problem.c in Sources */ = {isa = PBXBuildFile; fileRef = 161DEAF02508799E00293D0A /* 1000_A_B_Problem.c */; };
 		161DEAF325087B0100293D0A /* main_template.c in Sources */ = {isa = PBXBuildFile; fileRef = 161DEAF225087B0100293D0A /* main_template.c */; };
+		1620BFDE2613286100FA24F6 /* SeqList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1620BFDC2613286100FA24F6 /* SeqList.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		161A26762571050F006C6CB1 /* 02_greedy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = 02_greedy.hpp; sourceTree = "<group>"; };
 		161DEAF02508799E00293D0A /* 1000_A_B_Problem.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 1000_A_B_Problem.c; sourceTree = "<group>"; };
 		161DEAF225087B0100293D0A /* main_template.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main_template.c; sourceTree = "<group>"; };
+		1620BFDC2613286100FA24F6 /* SeqList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SeqList.cpp; sourceTree = "<group>"; };
+		1620BFDD2613286100FA24F6 /* SeqList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SeqList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,20 +71,22 @@
 			isa = PBXGroup;
 			children = (
 				161DEAEF2508796D00293D0A /* bailian */,
-				161A266F2570FC59006C6CB1 /* other */,
+				161A266F2570FC59006C6CB1 /* List */,
 				161A26702570FC6D006C6CB1 /* leetCode101 */,
 				16012260247269B000C8688A /* main.cpp */,
 			);
 			path = DKCProject;
 			sourceTree = "<group>";
 		};
-		161A266F2570FC59006C6CB1 /* other */ = {
+		161A266F2570FC59006C6CB1 /* List */ = {
 			isa = PBXGroup;
 			children = (
 				1601226824726F8900C8688A /* SqList.hpp */,
 				1601226724726F8900C8688A /* SqList.cpp */,
+				1620BFDD2613286100FA24F6 /* SeqList.hpp */,
+				1620BFDC2613286100FA24F6 /* SeqList.cpp */,
 			);
-			path = other;
+			path = List;
 			sourceTree = "<group>";
 		};
 		161A26702570FC6D006C6CB1 /* leetCode101 */ = {
@@ -162,6 +167,7 @@
 				161DEAF325087B0100293D0A /* main_template.c in Sources */,
 				16012261247269B000C8688A /* main.cpp in Sources */,
 				161A267325710214006C6CB1 /* 02_greedy.cpp in Sources */,
+				1620BFDE2613286100FA24F6 /* SeqList.cpp in Sources */,
 				1601226924726F8900C8688A /* SqList.cpp in Sources */,
 				161DEAF12508799E00293D0A /* 1000_A_B_Problem.c in Sources */,
 			);
