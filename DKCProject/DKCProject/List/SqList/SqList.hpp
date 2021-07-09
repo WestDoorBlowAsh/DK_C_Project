@@ -10,12 +10,12 @@
 #define SqList_hpp
 
 #include <stdio.h>
-
-#define SqListMaxSize 5
+#define SqListMaxSize 50
 typedef int ElemType;
 typedef struct {
     ElemType data[SqListMaxSize];
     int length; // 当前数组长度
+    int maxSize;
 } SqList;
 
 enum Status {
@@ -34,5 +34,5 @@ Status PrintList(SqList L);
 bool Empty(SqList L);
 Status DestroyList(SqList &L);
 
-
 #endif /* SqList_hpp */
+

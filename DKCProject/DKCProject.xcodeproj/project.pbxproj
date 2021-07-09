@@ -13,6 +13,8 @@
 		161DEAF12508799E00293D0A /* 1000_A_B_Problem.c in Sources */ = {isa = PBXBuildFile; fileRef = 161DEAF02508799E00293D0A /* 1000_A_B_Problem.c */; };
 		161DEAF325087B0100293D0A /* main_template.c in Sources */ = {isa = PBXBuildFile; fileRef = 161DEAF225087B0100293D0A /* main_template.c */; };
 		1620BFDE2613286100FA24F6 /* SeqList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1620BFDC2613286100FA24F6 /* SeqList.cpp */; };
+		E67C99FC2693E59E003A16FE /* test_sqlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E67C99FA2693E59E003A16FE /* test_sqlist.cpp */; };
+		E67C9A012697D9ED003A16FE /* SqList_Q.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E67C99FF2697D9ED003A16FE /* SqList_Q.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +40,10 @@
 		161DEAF225087B0100293D0A /* main_template.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main_template.c; sourceTree = "<group>"; };
 		1620BFDC2613286100FA24F6 /* SeqList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SeqList.cpp; sourceTree = "<group>"; };
 		1620BFDD2613286100FA24F6 /* SeqList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SeqList.hpp; sourceTree = "<group>"; };
+		E67C99FA2693E59E003A16FE /* test_sqlist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_sqlist.cpp; sourceTree = "<group>"; };
+		E67C99FB2693E59E003A16FE /* test_sqlist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test_sqlist.hpp; sourceTree = "<group>"; };
+		E67C99FF2697D9ED003A16FE /* SqList_Q.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SqList_Q.cpp; sourceTree = "<group>"; };
+		E67C9A002697D9ED003A16FE /* SqList_Q.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SqList_Q.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +87,11 @@
 		161A266F2570FC59006C6CB1 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				1601226824726F8900C8688A /* SqList.hpp */,
-				1601226724726F8900C8688A /* SqList.cpp */,
+				E67C99FE2697D9B1003A16FE /* SqList */,
 				1620BFDD2613286100FA24F6 /* SeqList.hpp */,
 				1620BFDC2613286100FA24F6 /* SeqList.cpp */,
+				E67C99FB2693E59E003A16FE /* test_sqlist.hpp */,
+				E67C99FA2693E59E003A16FE /* test_sqlist.cpp */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -105,6 +112,17 @@
 				161DEAF225087B0100293D0A /* main_template.c */,
 			);
 			path = bailian;
+			sourceTree = "<group>";
+		};
+		E67C99FE2697D9B1003A16FE /* SqList */ = {
+			isa = PBXGroup;
+			children = (
+				1601226824726F8900C8688A /* SqList.hpp */,
+				1601226724726F8900C8688A /* SqList.cpp */,
+				E67C9A002697D9ED003A16FE /* SqList_Q.hpp */,
+				E67C99FF2697D9ED003A16FE /* SqList_Q.cpp */,
+			);
+			path = SqList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +187,9 @@
 				161A267325710214006C6CB1 /* 02_greedy.cpp in Sources */,
 				1620BFDE2613286100FA24F6 /* SeqList.cpp in Sources */,
 				1601226924726F8900C8688A /* SqList.cpp in Sources */,
+				E67C9A012697D9ED003A16FE /* SqList_Q.cpp in Sources */,
 				161DEAF12508799E00293D0A /* 1000_A_B_Problem.c in Sources */,
+				E67C99FC2693E59E003A16FE /* test_sqlist.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,20 +308,24 @@
 		16012265247269B000C8688A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLFQNFJ548;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		16012266247269B000C8688A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLFQNFJ548;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
