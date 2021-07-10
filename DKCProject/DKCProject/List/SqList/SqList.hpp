@@ -10,6 +10,8 @@
 #define SqList_hpp
 
 #include <stdio.h>
+#include "Tool.hpp"
+
 #define SqListMaxSize 50
 typedef int ElemType;
 typedef struct {

@@ -15,6 +15,7 @@
 		1620BFDE2613286100FA24F6 /* SeqList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1620BFDC2613286100FA24F6 /* SeqList.cpp */; };
 		E67C99FC2693E59E003A16FE /* test_sqlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E67C99FA2693E59E003A16FE /* test_sqlist.cpp */; };
 		E67C9A012697D9ED003A16FE /* SqList_Q.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E67C99FF2697D9ED003A16FE /* SqList_Q.cpp */; };
+		E67C9A0B269835EB003A16FE /* Tool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A09269835EB003A16FE /* Tool.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +45,8 @@
 		E67C99FB2693E59E003A16FE /* test_sqlist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test_sqlist.hpp; sourceTree = "<group>"; };
 		E67C99FF2697D9ED003A16FE /* SqList_Q.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SqList_Q.cpp; sourceTree = "<group>"; };
 		E67C9A002697D9ED003A16FE /* SqList_Q.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SqList_Q.hpp; sourceTree = "<group>"; };
+		E67C9A09269835EB003A16FE /* Tool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tool.cpp; sourceTree = "<group>"; };
+		E67C9A0A269835EB003A16FE /* Tool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tool.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,7 @@
 		1601225F247269B000C8688A /* DKCProject */ = {
 			isa = PBXGroup;
 			children = (
+				E67C9A08269835CC003A16FE /* 0_Tool */,
 				161DEAEF2508796D00293D0A /* bailian */,
 				161A266F2570FC59006C6CB1 /* List */,
 				161A26702570FC6D006C6CB1 /* leetCode101 */,
@@ -123,6 +127,15 @@
 				E67C99FF2697D9ED003A16FE /* SqList_Q.cpp */,
 			);
 			path = SqList;
+			sourceTree = "<group>";
+		};
+		E67C9A08269835CC003A16FE /* 0_Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E67C9A09269835EB003A16FE /* Tool.cpp */,
+				E67C9A0A269835EB003A16FE /* Tool.hpp */,
+			);
+			path = 0_Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E67C9A0B269835EB003A16FE /* Tool.cpp in Sources */,
 				161DEAF325087B0100293D0A /* main_template.c in Sources */,
 				16012261247269B000C8688A /* main.cpp in Sources */,
 				161A267325710214006C6CB1 /* 02_greedy.cpp in Sources */,

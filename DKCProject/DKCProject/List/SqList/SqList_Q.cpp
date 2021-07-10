@@ -8,6 +8,8 @@
 
 #include "SqList_Q.hpp"
 #include "SqList.hpp"
+#include <string.h>
+#include <stdlib.h>
 
 // 删除最小值元素
 bool Del_Min(SqList &L, ElemType &value) {
@@ -260,6 +262,149 @@ void SearchExchangeInsert_D(SqList &L, int x) {
 }
 
 
-void SearchExchangeInsert(ElemType A[], ElemType x) {
+void SearchExchangeInsert(ElemType A[], int n, ElemType x) {
+    int low = 0, high = n - 1, mid = 0, i;
+    while (low <= high) {
+        mid = (low + high) / 2;
+        if (A[mid] == x) {
+            break;
+        } else if (A[mid] > x) {
+            high = mid - 1;
+        } else {
+            low = mid + 1;
+        }
+    }
+    if (A[mid] == x && mid != n - 1) {
+        int temp = A[mid];
+        A[mid] = A[mid + 1];
+        A[mid + 1] = temp;
+    }
+    if (low > high) {
+        for (i = n - 1; i > high; i--) {
+            A[i+1] = A[i];
+        }
+        A[i+1] = x;
+    }
+}
+
+// 一维数组左移p个位置
+void Reverse_D(int a[], int left, int right) {
+    int mid = (right + left) / 2;
+    for (int i = 0; i <= mid - left; i++) {
+        int temp = a[left + i];
+        a[left + i] = a[right - i];
+        a[right - i] = temp;
+    }
+}
+
+void Converse_D(int a[], int n, int p) {
+    Reverse_D(a, 0, n-1);
+    Reverse_D(a, 0, n-p-1);
+    Reverse_D(a, n-p, n-1);
+}
+
+void Reverse(int a[], int from, int to) {
+    for (int i = 0; i < (to - from + 1) / 2; i++) {
+        int temp = a[from + i];
+        a[from + i] = a[to - i];
+        a[to - i] = temp;
+    }
+}
+
+void Converse(int a[], int n, int p) {
+    Reverse_D(a, 0, p-1);
+    Reverse_D(a, p, n-1);
+    Reverse_D(a, 0, n-1);
+}
+
+// 找到两个等长升序数组共同的中位数
+int M_search_D(int a[], int b[], int n) {
+    int i = 0, j = 0, k = 0, mid = 0;
+    while (i < n && j < n && k < n) {
+        if (a[i] > b[j]) {
+            mid = b[j];
+            j++;
+        } else {
+            mid = a[i];
+            i++;
+        }
+        k++;
+    }
+    return mid;
+}
+
+int M_search(int a[], int b[], int n) {
+    int s1 = 0, d1 = n-1, s2 = 0, d2 = n-1, m1 = 0, m2 = 0;
+    while (s1 != d1 && s2 != d2) {
+        m1 = (s1 + d1) / 2;
+        m2 = (s2 + d2) / 2;
+        if (a[m1] == b[m2]) {
+            return a[m1];
+        } else if (a[m1] < b[m2]) {
+            if ((s1 + d1) % 2 == 0) {   // 偶数
+                s1 = m1;
+                d2 = m2;
+            } else {
+                s1 = m1 + 1;
+                d2 = m2;
+            }
+        } else {
+            if ((s2 + d2) % 2 == 0) {
+                s2 = m2;
+                d1 = m1;
+            } else {
+                s2 = m2 + 1;
+                d1 = m1;
+            }
+        }
+    }
+    return a[s1] < b[s2] ? a[s1] : b[s2];
+}
+
+// 数组中找到出现次数最多的数
+int Majority(int a[], int n) {
+    if (n == 0) {
+        return -1;
+    }
+    int main = a[0], count = 1, i;
+    for (i = 1; i < n; i++) {
+        if (a[i] == main) {
+            count++;
+        } else {
+            if (count > 0) {
+                count--;
+            } else {
+                main = a[i];
+                count = 1;
+            }
+        }
+    }
+    for (i = 0, count = 0; i < n; i++) {
+        if (a[i] == main) {
+            count++;
+        }
+    }
+    if (count > n / 2) {
+        return main;
+    }
+    return -1;
+}
+
+// 数组中找到最小正整数
+int findMissMin(int a[], int n) {
+    int i, *B;
+    B = (int *)malloc(sizeof(int) * n);
+    memset(B, 0, sizeof(int) * n);
+    for (i = 0; i < n; i++) {
+        if (a[i] > 0 && a[i] <= n) {
+            B[a[i] - 1] = 1;
+        }
+    }
+    for (i = 0; i < n; i++) {
+        if (B[i] == 0) {
+            break;
+        }
+    }
     
+    return i+1;
 }

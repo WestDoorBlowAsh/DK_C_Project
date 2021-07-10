@@ -101,15 +101,49 @@ void test() {
 //    merge(L1, L2, L);
 //    PrintList(L);
     
-    int arr5[20] = {1,2,4,6,7,8,9};
-    InitList(L, arr5, 7);
-    PrintList(L);
+//    int arr5[20] = {1,2,4,6,7,8,9};
+//    InitList(L, arr5, 7);
+//    PrintList(L);
     
 //    Exchange(arr5, 4, 3, 7);
 //    InitList(L, arr5, 7);
 //    PrintList(L);
     
 //    insert_x_D(L, 4);
-    insert_x_D(L, 6);
-    PrintList(L);
+//    SearchExchangeInsert(arr5, 7, 3);
+//    InitList(L, arr5, 8);
+//    PrintList(L);
+    
+//    int arr5[20] = {1,2,4,6};
+//    InitList(L, arr5, 4);
+//    PrintList(L);
+//
+//    Converse(arr5, 4, 1);
+//    InitList(L, arr5, 4);
+//    PrintList(L);
+    
+//    int arr6[20] = {11,13,15,17,19};
+//    int arr7[20] = {2,4,6,8,20};
+//    PrintArray(arr6, 5);
+//    PrintArray(arr7, 5);
+//
+//    int mid = M_search(arr6, arr7, 5);
+//    printf("mid = %d\n", mid);
+    
+//    int arr8[20] = {0,5,5,3,5,7,5,5,};
+//    PrintArray(arr8, 8);
+//    int arr9[20] = {0,5,5,3,5,7,1,5,};
+//    PrintArray(arr9, 8);
+//
+//    printf("%d  %d \n", findMain(arr8, 8), findMain(arr9, 8));
+    
+    int arr10[20] = {-5,3,2,3};
+    PrintArray(arr10, 4);
+    printf("%d \n", findMissMin(arr10, 4));
+    
+    int arr11[20] = {1,2,3};
+    PrintArray(arr11, 3);
+    printf("%d \n", findMissMin(arr11, 3));
+    
+    
 }

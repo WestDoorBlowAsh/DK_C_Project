@@ -26,7 +26,13 @@ bool Merge(SqList &L1, SqList &L2, SqList &L);
 void Exchange(int A[], int m, int n, int arraySize);
 void SearchExchangeInsert_D(SqList &L, int x);
 void SearchExchangeInsert(ElemType A[], ElemType x);
-
+void SearchExchangeInsert(ElemType A[], int n, ElemType x);
+void Converse_D(int a[], int n, int p);
+void Converse(int a[], int n, int p);
+int M_search_D(int a[], int b[], int n);
+int M_search(int a[], int b[], int n);
+int Majority(int a[], int n);
+int findMissMin(int a[], int n);
 
 
 #endif /* SqList_Q_hpp */
