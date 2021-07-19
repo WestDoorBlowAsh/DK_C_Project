@@ -10,6 +10,7 @@
 #define Tool_hpp
 
 #include <stdio.h>
+#include "Header.h"
 
 void PrintArray(int a[], int n);
 

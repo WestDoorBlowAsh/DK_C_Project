@@ -8,8 +8,6 @@
 
 #include "SqList_Q.hpp"
 #include "SqList.hpp"
-#include <string.h>
-#include <stdlib.h>
 
 // 删除最小值元素
 bool Del_Min(SqList &L, ElemType &value) {

@@ -9,13 +9,15 @@
 #include <iostream>
 #include "bailian/1000_A_B_Problem.c"
 #include "leetCode101/02_greedy.hpp"
-#include "test_sqlist.hpp"
+#include "Test.h"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
 
-    test();
+//    test_sqlist();
+    
+    test_linklist();
     
     
     return 0;

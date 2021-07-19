@@ -77,7 +77,7 @@ Status ListDelete(SeqList &L, int i, ElemType &e) {
     return OK;
 }
 
-Status PrintList(SeqList L) {
+Status PrintSeqList(SeqList L) {
     if (L.length == 0) {
         printf("SeqList 为空");
     }

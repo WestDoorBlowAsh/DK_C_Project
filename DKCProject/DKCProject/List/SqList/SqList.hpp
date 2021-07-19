@@ -13,17 +13,14 @@
 #include "Tool.hpp"
 
 #define SqListMaxSize 50
-typedef int ElemType;
+
 typedef struct {
     ElemType data[SqListMaxSize];
     int length; // 当前数组长度
     int maxSize;
 } SqList;
 
-enum Status {
-    OK = 1,
-    Error = -1
-};
+Status PrintSqList(SqList L);
 
 Status InitList(SqList &L);
 Status InitList(SqList &L, int *a, int length);
@@ -32,7 +29,6 @@ int LocateElem(SqList &L, ElemType e);
 ElemType GetElem(SqList &L, int i);
 Status ListInsert(SqList &L, int i, ElemType e);
 Status ListDelete(SqList &L, int i, ElemType &e);
-Status PrintList(SqList L);
 bool Empty(SqList L);
 Status DestroyList(SqList &L);
 

@@ -66,7 +66,7 @@ Status ListInsert(SqList &L, int i, ElemType e) {
 }
 
 /*
- 删除第i(1<=i<=L.length+1)个位置元素e.
+ 删除第i(1<=i<=L.length)个位置元素e.
  */
 Status ListDelete(SqList &L, int i, ElemType &e) {
     if (i < 1 || i > L.length) {
@@ -80,7 +80,7 @@ Status ListDelete(SqList &L, int i, ElemType &e) {
     return OK;
 }
 
-Status PrintList(SqList L) {
+Status PrintSqList(SqList L) {
     if (L.length == 0) {
         printf("SqList 为空");
     }

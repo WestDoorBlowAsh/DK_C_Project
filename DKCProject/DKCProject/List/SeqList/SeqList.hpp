@@ -10,19 +10,14 @@
 #define SeqList_hpp
 
 #include <stdio.h>
+#include "Tool.hpp"
 
 #define SeqListMaxSize 5
 
-typedef int ElemType;
 typedef struct {
     ElemType *data;
     int maxSize, length;
 } SeqList;
-
-enum Status {
-    OK = 1,
-    Error = -1
-};
 
 Status InitList(SeqList &L);
 Status InitList(SeqList &L, int *a, int length);
@@ -31,7 +26,7 @@ int LocateElem(SeqList &L, ElemType e);
 ElemType GetElem(SeqList &L, int i);
 Status ListInsert(SeqList &L, int i, ElemType e);
 Status ListDelete(SeqList &L, int i, ElemType &e);
-Status PrintList(SeqList L);
+Status PrintSeqList(SeqList L);
 bool Empty(SeqList L);
 Status DestroyList(SeqList &L);
 

@@ -17,4 +17,4 @@
 
 
 
-void test();
+void test_sqlist();
