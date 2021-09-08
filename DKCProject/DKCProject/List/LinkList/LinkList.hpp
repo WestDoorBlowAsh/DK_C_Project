@@ -17,11 +17,6 @@ typedef struct LNode {
     struct LNode *next;
 }LNode, *LinkList;
 
-typedef struct DNode {
-    ElemType data;
-    struct DNode *prior, *next;
-} DNode, *DLinklist;
-
 Status PrintLinkList(LinkList L);
 
 LinkList List_HeadInsert(LinkList &L);
@@ -32,5 +27,9 @@ LNode *LocateElem(LinkList L, ElemType e);
 Status InsertNode(LinkList &L, int i, ElemType e);
 Status DeleteNode(LinkList &L, int i);
 int LinkListLength(LinkList L);
+
+// 循环单链表
+LinkList ListCircleInit(int a[], int n);
+Status PrintCircleLinkList(LinkList L);
 
 #endif /* LinkList_hpp */

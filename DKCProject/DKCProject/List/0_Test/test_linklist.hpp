@@ -10,8 +10,12 @@
 #define test_linklist_hpp
 
 #include <stdio.h>
-#include "LinkList.hpp"
+#include "DLinkList.hpp"
 
 void test_linklist();
+void test_linklist_q();
+void test_dLinklist();
+void test_dLinklist_q();
+void test_Linklist_circle_q();
     
 #endif /* test_linklist_hpp */

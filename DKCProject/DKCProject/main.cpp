@@ -17,8 +17,15 @@ int main(int argc, const char * argv[]) {
 
 //    test_sqlist();
     
-    test_linklist();
+//    test_linklist();
     
+//    test_dLinklist();
+    
+    test_linklist_q();
+    
+//    test_dLinklist_q();
+    
+//    test_Linklist_circle_q();
     
     return 0;
 }

@@ -18,6 +18,8 @@
 		E67C9A0B269835EB003A16FE /* Tool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A09269835EB003A16FE /* Tool.cpp */; };
 		E67C9A112699731A003A16FE /* LinkList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A0F2699731A003A16FE /* LinkList.cpp */; };
 		E67C9A18269976C9003A16FE /* test_linklist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A16269976C9003A16FE /* test_linklist.cpp */; };
+		E67C9A1F26A510AA003A16FE /* DLinklist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A1D26A510AA003A16FE /* DLinklist.cpp */; };
+		E67C9A2926A527E8003A16FE /* LinkList_Q.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A2726A527E8003A16FE /* LinkList_Q.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +46,6 @@
 		1620BFDC2613286100FA24F6 /* SeqList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SeqList.cpp; sourceTree = "<group>"; };
 		1620BFDD2613286100FA24F6 /* SeqList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SeqList.hpp; sourceTree = "<group>"; };
 		E67C99FA2693E59E003A16FE /* test_sqlist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_sqlist.cpp; sourceTree = "<group>"; };
-		E67C99FB2693E59E003A16FE /* test_sqlist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test_sqlist.hpp; sourceTree = "<group>"; };
 		E67C99FF2697D9ED003A16FE /* SqList_Q.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SqList_Q.cpp; sourceTree = "<group>"; };
 		E67C9A002697D9ED003A16FE /* SqList_Q.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SqList_Q.hpp; sourceTree = "<group>"; };
 		E67C9A09269835EB003A16FE /* Tool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tool.cpp; sourceTree = "<group>"; };
@@ -53,8 +54,13 @@
 		E67C9A102699731A003A16FE /* LinkList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkList.hpp; sourceTree = "<group>"; };
 		E67C9A1326997396003A16FE /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		E67C9A16269976C9003A16FE /* test_linklist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_linklist.cpp; sourceTree = "<group>"; };
-		E67C9A17269976C9003A16FE /* test_linklist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test_linklist.hpp; sourceTree = "<group>"; };
 		E67C9A1B269979EF003A16FE /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		E67C9A1D26A510AA003A16FE /* DLinklist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DLinklist.cpp; sourceTree = "<group>"; };
+		E67C9A1E26A510AA003A16FE /* DLinklist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DLinklist.hpp; sourceTree = "<group>"; };
+		E67C9A2426A515CD003A16FE /* test_linklist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test_linklist.hpp; sourceTree = "<group>"; };
+		E67C9A2526A515CD003A16FE /* test_sqlist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test_sqlist.hpp; sourceTree = "<group>"; };
+		E67C9A2726A527E8003A16FE /* LinkList_Q.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkList_Q.cpp; sourceTree = "<group>"; };
+		E67C9A2826A527E8003A16FE /* LinkList_Q.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkList_Q.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +93,11 @@
 		1601225F247269B000C8688A /* DKCProject */ = {
 			isa = PBXGroup;
 			children = (
+				16012260247269B000C8688A /* main.cpp */,
 				E67C9A08269835CC003A16FE /* 0_Tool */,
 				161DEAEF2508796D00293D0A /* bailian */,
 				161A266F2570FC59006C6CB1 /* List */,
 				161A26702570FC6D006C6CB1 /* leetCode101 */,
-				16012260247269B000C8688A /* main.cpp */,
 			);
 			path = DKCProject;
 			sourceTree = "<group>";
@@ -158,8 +164,12 @@
 		E67C9A0E269972FE003A16FE /* LinkList */ = {
 			isa = PBXGroup;
 			children = (
-				E67C9A102699731A003A16FE /* LinkList.hpp */,
 				E67C9A0F2699731A003A16FE /* LinkList.cpp */,
+				E67C9A102699731A003A16FE /* LinkList.hpp */,
+				E67C9A1D26A510AA003A16FE /* DLinklist.cpp */,
+				E67C9A1E26A510AA003A16FE /* DLinklist.hpp */,
+				E67C9A2726A527E8003A16FE /* LinkList_Q.cpp */,
+				E67C9A2826A527E8003A16FE /* LinkList_Q.hpp */,
 			);
 			path = LinkList;
 			sourceTree = "<group>";
@@ -167,9 +177,9 @@
 		E67C9A152699769E003A16FE /* 0_Test */ = {
 			isa = PBXGroup;
 			children = (
-				E67C99FB2693E59E003A16FE /* test_sqlist.hpp */,
+				E67C9A2526A515CD003A16FE /* test_sqlist.hpp */,
 				E67C99FA2693E59E003A16FE /* test_sqlist.cpp */,
-				E67C9A17269976C9003A16FE /* test_linklist.hpp */,
+				E67C9A2426A515CD003A16FE /* test_linklist.hpp */,
 				E67C9A16269976C9003A16FE /* test_linklist.cpp */,
 				E67C9A1B269979EF003A16FE /* Test.h */,
 			);
@@ -233,7 +243,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E67C9A1F26A510AA003A16FE /* DLinklist.cpp in Sources */,
 				E67C9A0B269835EB003A16FE /* Tool.cpp in Sources */,
+				E67C9A2926A527E8003A16FE /* LinkList_Q.cpp in Sources */,
 				E67C9A18269976C9003A16FE /* test_linklist.cpp in Sources */,
 				161DEAF325087B0100293D0A /* main_template.c in Sources */,
 				16012261247269B000C8688A /* main.cpp in Sources */,

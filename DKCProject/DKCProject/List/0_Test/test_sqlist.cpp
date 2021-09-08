@@ -6,7 +6,8 @@
 //  Copyright © 2021 dk. All rights reserved.
 //
 
-#include "test_sqlist.hpp"
+#include "SqList.hpp"
+#include "SqList_Q.hpp"
 
 void test_sqlist() {
     SqList L, L1, L2;

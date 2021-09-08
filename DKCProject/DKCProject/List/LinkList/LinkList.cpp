@@ -130,3 +130,28 @@ int LinkListLength(LinkList L) {
     }
     return i;
 }
+
+LinkList ListCircleInit(int a[], int n) {
+    LinkList L = (LinkList)malloc(sizeof(LNode));
+    L->next = NULL;
+    LNode *s = NULL, *p = L;
+    for (int i = 0; i < n; i++) {
+        s = (LNode *)malloc(sizeof(LNode));
+        s->data = a[i];
+        s->next = NULL;
+        p->next = s;
+        p = s;
+    }
+    s->next = L;
+    return L;
+}
+
+Status PrintCircleLinkList(LinkList L) {
+    LNode *p = L->next;
+    while (p && p != L) {
+        printf("%d ", p->data);
+        p = p->next;
+    }
+    printf("\n");
+    return OK;
+}
