@@ -27,7 +27,9 @@ int main(int argc, const char * argv[]) {
     
 //    test_Linklist_circle_q();
     
-    test_sqstack();
+//    test_sqstack();
+    
+    test_sqstack_q();
     
     return 0;
 }

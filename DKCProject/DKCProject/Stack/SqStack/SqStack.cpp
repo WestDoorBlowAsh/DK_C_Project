@@ -14,6 +14,7 @@ Status PrintSqStack(SqStack S) {
         return Error;
     }
     int n = 0;
+    printf("打印栈 ");
     while (n <= S.top) {
         printf("%d ", S.data[n++]);
     }

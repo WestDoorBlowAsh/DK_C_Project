@@ -16,3 +16,4 @@
 #endif /* test_sqstack_hpp */
 
 void test_sqstack();
+void test_sqstack_q();

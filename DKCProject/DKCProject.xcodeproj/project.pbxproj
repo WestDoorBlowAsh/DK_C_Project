@@ -23,6 +23,7 @@
 		E691B05A26E8A0170099CB11 /* SqStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E691B05826E8A0170099CB11 /* SqStack.cpp */; };
 		E691B05F26E8A5A70099CB11 /* test_sqstack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E691B05D26E8A5A70099CB11 /* test_sqstack.cpp */; };
 		E691B06526EF9EF20099CB11 /* LiStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E691B06326EF9EF20099CB11 /* LiStack.cpp */; };
+		E691B06926FD97400099CB11 /* Stack_Q.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E691B06726FD97400099CB11 /* Stack_Q.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +71,8 @@
 		E691B05E26E8A5A70099CB11 /* test_sqstack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test_sqstack.hpp; sourceTree = "<group>"; };
 		E691B06326EF9EF20099CB11 /* LiStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LiStack.cpp; sourceTree = "<group>"; };
 		E691B06426EF9EF20099CB11 /* LiStack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LiStack.hpp; sourceTree = "<group>"; };
+		E691B06726FD97400099CB11 /* Stack_Q.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stack_Q.cpp; sourceTree = "<group>"; };
+		E691B06826FD97400099CB11 /* Stack_Q.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack_Q.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +202,8 @@
 		E691B05626E89FD80099CB11 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
+				E691B06826FD97400099CB11 /* Stack_Q.hpp */,
+				E691B06726FD97400099CB11 /* Stack_Q.cpp */,
 				E691B05C26E8A58A0099CB11 /* 0_Test */,
 				E691B05726E89FED0099CB11 /* SqStack */,
 				E691B06226EF9ED30099CB11 /* LiStack */,
@@ -305,6 +310,7 @@
 				161DEAF12508799E00293D0A /* 1000_A_B_Problem.c in Sources */,
 				E67C99FC2693E59E003A16FE /* test_sqlist.cpp in Sources */,
 				E67C9A112699731A003A16FE /* LinkList.cpp in Sources */,
+				E691B06926FD97400099CB11 /* Stack_Q.cpp in Sources */,
 				E691B05F26E8A5A70099CB11 /* test_sqstack.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

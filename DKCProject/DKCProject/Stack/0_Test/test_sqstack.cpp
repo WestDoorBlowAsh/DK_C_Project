@@ -7,10 +7,48 @@
 //
 
 #include "test_sqstack.hpp"
+#include "Stack_Q.hpp"
+
+
+void test_sqstack_q() {
+    
+//    char str1[] = "IOIIOIOO";
+//    printf("%d\n", isIOLegal(str1, sizeof(str1)));
+//    char str2[] = "IOOIOIIO";
+//    printf("%d\n", isIOLegal(str2, sizeof(str2)));
+//    char str3[] = "IIIOIOIO";
+//    printf("%d\n", isIOLegal(str3, sizeof(str3)));
+//    char str4[] = "IIIOOIOO";
+//    printf("%d\n", isIOLegal(str4, sizeof(str4)));
+//    char str5[] = "IOII";
+//    printf("%d\n", isIOLegal(str5, sizeof(str5)));
+    
+    
+    int arr[20] = {1,2,4,4,2,1};
+    LinkList L = ListInit(arr, 6);
+    PrintLinkList(L);
+    printf("%d \n", dc_D(L));
+    
+    L = ListInit(arr, 5);
+    PrintLinkList(L);
+    printf("%d \n", dc_D(L));
+    
+    L = ListInit(arr, 1);
+    PrintLinkList(L);
+    printf("%d \n", dc_D(L));
+    
+    
+    
+//    (L);
+    
+}
 
 void test_sqstack() {
     
     SqStack S;
+    
+    InitStack(S);
+    PrintSqStack(S);
     
     int arr[20] = {4,2,6,3,7};
     InitStack(S, arr, 5);

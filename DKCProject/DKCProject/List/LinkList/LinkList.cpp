@@ -10,6 +10,7 @@
 
 Status PrintLinkList(LinkList L) {
     LNode *p = L->next;
+    printf("打印链表 ");
     while (p) {
         printf("%d ", p->data);
         p = p->next;

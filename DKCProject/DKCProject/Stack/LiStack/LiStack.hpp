@@ -17,4 +17,10 @@ typedef struct Linknode {
     struct Linknode *next;
 } *LiStack;
 
+#define maxsize 100
+typedef struct {
+    ElemType stack[maxsize];
+    int top[2];
+} ShareStack;   // 共享栈
+
 #endif /* LiStack_hpp */
