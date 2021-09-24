@@ -21,11 +21,13 @@ int main(int argc, const char * argv[]) {
     
 //    test_dLinklist();
     
-    test_linklist_q();
+//    test_linklist_q();
     
 //    test_dLinklist_q();
     
 //    test_Linklist_circle_q();
+    
+    test_sqstack();
     
     return 0;
 }
