@@ -12,10 +12,7 @@
 #include <stdio.h>
 #include "Tool.hpp"
 
-typedef struct Linknode {
-    ElemType data;
-    struct Linknode *next;
-} *LiStack;
+typedef LinkNode LiStack;
 
 #define maxsize 100
 typedef struct {

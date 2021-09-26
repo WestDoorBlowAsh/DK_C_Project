@@ -12,6 +12,7 @@
 #include "test_sqlist.hpp"
 #include "test_linklist.hpp"
 #include "test_sqstack.hpp"
+#include "test_sqqueue.hpp"
 
 
 

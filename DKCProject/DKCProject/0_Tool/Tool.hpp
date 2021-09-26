@@ -12,6 +12,11 @@
 #include <stdio.h>
 #include "Header.h"
 
+typedef struct LinkNode {
+    ElemType data;
+    struct LinkNode *next;
+} LinkNode;
+
 void PrintArray(int a[], int n);
 
 #endif /* Tool_hpp */

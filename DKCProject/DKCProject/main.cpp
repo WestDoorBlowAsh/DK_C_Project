@@ -29,7 +29,9 @@ int main(int argc, const char * argv[]) {
     
 //    test_sqstack();
     
-    test_sqstack_q();
+//    test_sqstack_q();
+    
+    test_sqqueue();
     
     return 0;
 }

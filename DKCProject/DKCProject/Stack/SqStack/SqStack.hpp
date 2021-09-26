@@ -16,7 +16,7 @@
 
 typedef struct {
     ElemType data[SqStackMaxSize];
-    int top; // 当前数组长度
+    int top; // 栈顶指针
 } SqStack;
 
 Status PrintSqStack(SqStack S);
