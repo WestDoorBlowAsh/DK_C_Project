@@ -93,3 +93,77 @@ bool dc_D(LinkList L) {
     
     return true;
 }
+
+// 括号匹配
+bool BracketsCheck(char *str) {
+    SqStack S;
+    InitStack(S);
+    int i = 0;
+    while (str[i] != '\0') {
+        switch (str[i]) {
+            case '(':
+                Push(S, str[i]);
+                break;
+            case ')':
+                ElemType x;
+                Pop(S, x);
+                if (x != '(') {
+                    return false;
+                }
+            default:
+                break;
+        }
+        i++;
+    }
+    if (StackEmpty(S)) {
+        return true;
+    }
+    return false;
+}
+
+// 字符串中 S 弄到 H 之前
+void Train_Arrange(char *train) {
+    SqStack S;
+    InitStack(S);
+    
+    char *p = train, *q = train;
+    ElemType c;
+    while (*p) {
+        if (*p == 'H') {
+            Push(S, *p);
+        } else {
+            *(q++) = *p;
+        }
+        p++;
+    }
+    while (!StackEmpty(S)) {
+        Pop(S, c);
+        *(q++) = c;
+    }
+}
+
+// 栈实现递归函数
+double p(int n, int x) {
+    struct stack {
+        int no;
+        double val;
+    } st[SqStackMaxSize];
+    
+    int top = -1;
+    for (int i = n; i >= 2; i++) {
+        top++;
+        st[top].no = i;
+    }
+    int fv1 = 1, fv2 = 2 * x;
+    while (top >= 0) {
+        st[top].val = 2 * x * fv2 - 2 * (st[top].no - 1) * fv1;
+        fv1 = fv2;
+        fv2 = st[top].val;
+        top--;
+    }
+    if (n == 0) {
+        return fv1;
+    }
+    return fv2;
+}
+

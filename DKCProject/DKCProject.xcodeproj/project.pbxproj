@@ -27,6 +27,7 @@
 		E691B07426FDB4260099CB11 /* SqQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E691B07226FDB4260099CB11 /* SqQueue.cpp */; };
 		E691B07A26FDB7CD0099CB11 /* test_sqqueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E691B07826FDB7CD0099CB11 /* test_sqqueue.cpp */; };
 		E691B08126FDBF600099CB11 /* LinkQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E691B07F26FDBF600099CB11 /* LinkQueue.cpp */; };
+		E691B08527003D960099CB11 /* Queue_Q.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E691B08327003D960099CB11 /* Queue_Q.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,6 +83,8 @@
 		E691B07926FDB7CD0099CB11 /* test_sqqueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test_sqqueue.hpp; sourceTree = "<group>"; };
 		E691B07F26FDBF600099CB11 /* LinkQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkQueue.cpp; sourceTree = "<group>"; };
 		E691B08026FDBF600099CB11 /* LinkQueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkQueue.hpp; sourceTree = "<group>"; };
+		E691B08327003D960099CB11 /* Queue_Q.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Queue_Q.cpp; sourceTree = "<group>"; };
+		E691B08427003D960099CB11 /* Queue_Q.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue_Q.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,19 +254,11 @@
 		E691B07026FDB3B10099CB11 /* Queue */ = {
 			isa = PBXGroup;
 			children = (
-				E691B07126FDB3F10099CB11 /* SqQueue */,
+				E691B07726FDB79D0099CB11 /* 0_Test */,
+				E691B07E26FDBF420099CB11 /* LinkQueue */,
+				E691B07D26FDBF300099CB11 /* SqQueue */,
 			);
 			path = Queue;
-			sourceTree = "<group>";
-		};
-		E691B07126FDB3F10099CB11 /* SqQueue */ = {
-			isa = PBXGroup;
-			children = (
-				E691B07726FDB79D0099CB11 /* 0_Test */,
-				E691B07D26FDBF300099CB11 /* SqQueue */,
-				E691B07E26FDBF420099CB11 /* LinkQueue */,
-			);
-			path = SqQueue;
 			sourceTree = "<group>";
 		};
 		E691B07726FDB79D0099CB11 /* 0_Test */ = {
@@ -280,8 +275,11 @@
 			children = (
 				E691B07226FDB4260099CB11 /* SqQueue.cpp */,
 				E691B07326FDB4260099CB11 /* SqQueue.hpp */,
+				E691B08327003D960099CB11 /* Queue_Q.cpp */,
+				E691B08427003D960099CB11 /* Queue_Q.hpp */,
 			);
-			path = SqQueue;
+			name = SqQueue;
+			path = SqQueue/SqQueue;
 			sourceTree = "<group>";
 		};
 		E691B07E26FDBF420099CB11 /* LinkQueue */ = {
@@ -360,6 +358,7 @@
 				16012261247269B000C8688A /* main.cpp in Sources */,
 				E691B07426FDB4260099CB11 /* SqQueue.cpp in Sources */,
 				E691B06526EF9EF20099CB11 /* LiStack.cpp in Sources */,
+				E691B08527003D960099CB11 /* Queue_Q.cpp in Sources */,
 				161A267325710214006C6CB1 /* 02_greedy.cpp in Sources */,
 				1620BFDE2613286100FA24F6 /* SeqList.cpp in Sources */,
 				1601226924726F8900C8688A /* SqList.cpp in Sources */,
